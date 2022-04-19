@@ -1,0 +1,871 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- ----------main style------------ -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <!-- ------------Google Fonts-------------- -->
+  <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <!-- --------------Icon pack font-awesome----------- -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <title>TechMart | World's Best Market</title>
+</head>
+
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/logo.png" style="height: 60px" alt="logo-image" />
+        </div>
+        <nav>
+          <ul id="menu-items">
+            <li><a href="">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="register.html">Account</a></li>
+          </ul>
+        </nav>
+        <a href="payment-gateway.html"><img src="images/cart.png" alt="cart" width="30px" height="30px"
+            class="cart-img" /></a>
+        <img src="images/menu.png" alt="menu" width="30px" height="30px" class="menu-icon" onclick="menutoggle()" />
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h1 class="text-white">
+            Great deals happening <br />
+            Right Now!
+          </h1>
+          <p>Enjoy a safe, convenient shopping experience</p>
+          <p>
+            Shop stress-free from home. We’re ready to help, online or by
+            phone.
+          </p>
+          <a href="#products" class="btn btn-main">Explore Now &#8594;</a>
+        </div>
+        <div class="col-md-6">
+          <img src="images/laptop-banner.png" alt="banner-image" class="center" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- featured products -->
+  <div class="small-container mt-5">
+    <h2 class="title">Featured Products</h2>
+    <div class="row horizontal-scroll-wrapper squares">
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/tablet-pc.png" alt="tablet pc" />
+        <h5 class="product_name">Tablet Pc</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Tablet Pc</h3>
+          <h4 class="content-price">Rs14000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs14000.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/xbox-one-x.png" alt="Gaming console" />
+        <h5 class="product_name">Xbox One-X Console</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Xbox One-X Console</h3>
+          <h4 class="content-price">Rs12000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs12000</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/iphonex-phone.jpg" alt="Iphone X" />
+        <h5 class="product_name">IPhone X</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">IPhone X</h3>
+          <h4 class="content-price">Rs69000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs69000.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/keyboard.jpg" alt="keyboard" />
+        <h5 class="product_name">Logitech Super Slim</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Logitech Super Slim</h3>
+          <h4 class="content-price">Rs199.99</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs199.99</p>
+      </div>
+    </div>
+    <!-- Latest products -->
+    <h2 class="title" id="products">Latest Products</h2>
+    <div class="row">
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/Gaming PC.png" alt="Gaming Laptop" />
+        <h5 class="product_name">Gaming PC</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Gaming PC</h3>
+          <h4 class="content-price">Rs200000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs200000</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/canon-cam.jpg" alt="Camera" />
+        <h5 class="product_name">Canon 12X Pro Shoot</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Canon 12X Pro Shoot</h3>
+          <h4 class="content-price">Rs39000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs39000</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/iphone9-phone.jpg" alt="Iphone SE" />
+        <h5 class="product_name">IPhone SE</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">IPhone SE</h3>
+          <h4 class="content-price">Rs49999.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs49999.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/logitech-tab.png" alt="Tablet Pc" />
+        <h5 class="product_name">Samsung Tablet</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Samsung Tablet</h3>
+          <h4 class="content-price">Rs35000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs35000.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/imac.jpg" alt="Imac" />
+        <h5 class="product_name">Apple Imac</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Apple Imac</h3>
+          <h4 class="content-price">Rs190000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs190000.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/thunderbolt.jpeg" alt="Gaming Laptop" />
+        <h5 class="product_name">USB Type-C Thunderbolt</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">USB Type-C Thunderbolt</h3>
+          <h4 class="content-price">Rs400.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs400</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/laptop-gaming.jpg" alt="Gaming Laptop" />
+        <h5 class="product_name">Alienware Laptop</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Alienware Laptop</h3>
+          <h4 class="content-price">Rs89000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs89000.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/cod-ps4.jpg" alt="Playstation 4" />
+        <h5 class="product_name">Call of Duty MW</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Call of Duty MW</h3>
+          <h4 class="content-price">Rs1200.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs1200.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/phantom-drone.png" alt="Phantom Drone" />
+        <h5 class="product_name">Phantom Drone</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Phantom Drone</h3>
+          <h4 class="content-price">Rs8000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs8000.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/epson-projector.png" alt="Epson Projector" />
+        <h5 class="product_name">Epson Projector</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Epson Projector</h3>
+          <h4 class="content-price">Rs7000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs7000.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/ps4-headset.jpg" alt="Gaming Headset" />
+        <h5 class="product_name">Ps4 Gaming Headset</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Ps4 Gaming Headset</h3>
+          <h4 class="content-price">Rs2000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs2000.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/superbass-speakers.jpg" alt="Super Bass Laptop Speakers" />
+        <h5 class="product_name">Super Bass USB Speakers</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Super Bass USB Speakers</h3>
+          <h4 class="content-price">Rs2500.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs2500</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/xbox-game.jpg" alt="Fifa 20 Xbox" />
+        <h5 class="product_name">FIFA 20 Xbox</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">FIFA 20 Xbox</h3>
+          <h4 class="content-price">Rs800.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs800</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/xbox-headset.jpg" alt="Xbox Headset" />
+        <h5 class="product_name">Xbox Headset</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Xbox Headset</h3>
+          <h4 class="content-price">Rs1500.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs1500.00</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/falcon-drone.jpg" alt="falcon-drone" />
+        <h5 class="product_name">Falcon Drone</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Falcon Drone</h3>
+          <h4 class="content-price">Rs10000.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs10000</p>
+      </div>
+      <div class="col-4 box-container">
+        <div class="image-overlay"></div>
+        <img src="images/ps4-fortnite.jpg" alt="Fortnite" />
+        <h5 class="product_name">Ps4 Fornite</h5>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <div class="content-details fadeIn-bottom">
+          <h3 class="content-title">Ps4 Fornite</h3>
+          <h4 class="content-price">Rs600.00</h4>
+          <div class="content-btn btn btn-secondary" title="Add to Cart">
+            <i class="fa fa-cart-plus" aria-hidden="true" onclick="updatetxt()"></i>
+          </div>
+          <div class="content-btn btn btn-secondary" title="Learn More">
+            <i aria-hidden="true" href=""><a>Learn More</a></i>
+          </div>
+        </div>
+        <p class="price_name">Rs600</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- offer -->
+  <div class="offer">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-6">
+          <img src="images/acer-banner.png" class="offer-img" />
+        </div>
+        <div class="col-6 text-data text-white">
+          <p>Top Products you should take it</p>
+          <h1>Best Product limited offer!</h1>
+
+          <a href="" class="btn btn-main">Buy Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="locate">
+    <div class="small-container">
+      <h2 class="title" id="contact">Google Map</h2>
+      <div class="row">
+        <div class="col-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1886.0201435889035!2d72.86505525790025!3d19.017946332587037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cf1addd5d943%3A0x16079e2e1c9d27c6!2sLinux-Master%20Tutorials!5e0!3m2!1sen!2sin!4v1648948378930!5m2!1sen!2sin"
+            width="auto" height="350px" style="border: 0" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-2">
+          <h2>Address</h2>
+          <p>
+            Barkat Ali Nagar, Antop Hill S.O, Wadala East, Dist.- Mumbai,
+            Maharashtra - 400037
+          </p>
+          <p>Phone No +91 8097905879</p>
+          <div>
+            <a class="btn" href="https://goo.gl/maps/RiBUyq5CwciBDRMa6" target="_blank" style="
+                  color: rgb(237, 249, 254);
+                  background-color: rgb(0, 28, 85);
+                  border: 1px solid rgb(0, 28, 85);
+                ">Visit on Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- brands -->
+  <div class="brands">
+    <div class="small-container">
+      <h2 class="title">Brands</h2>
+      <div class="row">
+        <div class="brand-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48"
+            style="fill: #000000">
+            <path fill="#ff5722" d="M6 6H22V22H6z" transform="rotate(-180 14 14)"></path>
+            <path fill="#4caf50" d="M26 6H42V22H26z" transform="rotate(-180 34 14)"></path>
+            <path fill="#ffc107" d="M26 26H42V42H26z" transform="rotate(-180 34 34)"></path>
+            <path fill="#03a9f4" d="M6 26H22V42H6z" transform="rotate(-180 14 34)"></path>
+          </svg>
+        </div>
+        <div class="brand-logo">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="100" width="100"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z">
+            </path>
+          </svg>
+        </div>
+        <div class="brand-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48"
+            style="fill: #000000">
+            <path fill="#0d47a1"
+              d="M47.97,19.826c0.654,3.747-9.547,8.655-22.788,10.96c-13.238,2.306-24.5,1.136-25.153-2.613 c-0.653-3.747,9.551-8.654,22.79-10.958C36.059,14.907,47.318,16.078,47.97,19.826z">
+            </path>
+            <polygon fill="#fafafa"
+              points="35.51,25.388 35.442,21.492 36.671,21.492 36.671,26.403 34.905,26.403 33.678,22.373 33.652,22.373 33.72,26.403 32.499,26.403 32.499,21.492 34.342,21.492 35.483,25.388">
+            </polygon>
+            <polygon fill="#fafafa"
+              points="13.177,21.952 12.497,26.455 11.157,26.455 12.076,21.492 14.284,21.492 15.201,26.455 13.865,26.455 13.204,21.952">
+            </polygon>
+            <polygon fill="#fafafa"
+              points="18.964,25.286 19.577,21.492 21.601,21.492 21.708,26.455 20.468,26.455 20.435,21.993 20.409,21.993 19.58,26.455 18.321,26.455 17.49,21.993 17.464,21.993 17.433,26.455 16.19,26.455 16.3,21.492 18.325,21.492 18.937,25.286">
+            </polygon>
+            <path fill="#fafafa"
+              d="M9.067,25.055c0.049,0.12,0.034,0.275,0.011,0.368c-0.042,0.165-0.154,0.333-0.483,0.333 c-0.312,0-0.5-0.179-0.5-0.45v-0.48H6.763L6.762,25.21c0,1.106,0.871,1.441,1.805,1.441c0.898,0,1.637-0.307,1.754-1.134 c0.061-0.429,0.015-0.709-0.005-0.816c-0.209-1.039-2.093-1.349-2.233-1.93c-0.024-0.099-0.017-0.205-0.005-0.262 c0.035-0.158,0.143-0.332,0.453-0.332c0.29,0,0.461,0.18,0.461,0.45c0,0.091,0,0.307,0,0.307h1.237v-0.348 c0-1.081-0.97-1.25-1.673-1.25c-0.883,0-1.604,0.292-1.736,1.099c-0.036,0.223-0.041,0.422,0.011,0.671 C7.049,24.118,8.811,24.412,9.067,25.055z">
+            </path>
+            <path fill="#fafafa"
+              d="M25.204,25.046c0.049,0.119,0.033,0.27,0.011,0.363c-0.041,0.165-0.152,0.33-0.479,0.33 c-0.307,0-0.494-0.179-0.494-0.444l-0.001-0.476h-1.318l-0.002,0.379c0,1.095,0.863,1.426,1.787,1.426 c0.888,0,1.62-0.303,1.736-1.122c0.061-0.426,0.018-0.702-0.004-0.807c-0.208-1.029-2.073-1.336-2.211-1.912 c-0.024-0.099-0.017-0.203-0.005-0.257c0.036-0.16,0.142-0.329,0.449-0.329c0.288,0,0.455,0.175,0.455,0.444 c0,0.09,0,0.304,0,0.304h1.228v-0.345c0-1.07-0.962-1.237-1.659-1.237c-0.873,0-1.588,0.288-1.717,1.09 c-0.036,0.22-0.04,0.415,0.012,0.663C23.206,24.118,24.951,24.41,25.204,25.046z">
+            </path>
+            <path fill="#fafafa"
+              d="M29.372,25.713c0.344,0,0.451-0.238,0.475-0.36c0.01-0.054,0.013-0.125,0.012-0.19V21.49h1.255 v3.56c0.003,0.091-0.006,0.279-0.011,0.325c-0.088,0.927-0.821,1.227-1.732,1.227c-0.913,0-1.646-0.301-1.733-1.227 c-0.004-0.047-0.013-0.235-0.011-0.325v-3.56h1.254v3.672c0,0.064,0.002,0.137,0.012,0.19 C28.921,25.473,29.025,25.713,29.372,25.713z">
+            </path>
+            <path fill="#fafafa"
+              d="M39.725,25.66c0.359,0,0.485-0.227,0.508-0.359c0.009-0.057,0.012-0.126,0.011-0.189v-0.72 h-0.509v-0.724h1.76V25c-0.001,0.093-0.003,0.162-0.018,0.327c-0.082,0.903-0.866,1.225-1.745,1.225 c-0.881,0-1.663-0.322-1.747-1.225c-0.014-0.166-0.016-0.234-0.018-0.327l0.001-2.089c0-0.088,0.011-0.244,0.021-0.327 c0.11-0.928,0.862-1.226,1.743-1.226c0.88,0,1.651,0.297,1.742,1.226c0.016,0.158,0.011,0.327,0.011,0.327v0.166h-1.251v-0.278 c0.001,0.001-0.002-0.118-0.016-0.189c-0.021-0.11-0.116-0.362-0.495-0.362c-0.362,0-0.467,0.238-0.494,0.362 c-0.015,0.065-0.021,0.154-0.021,0.234v2.27c-0.001,0.063,0.003,0.132,0.013,0.189C39.241,25.433,39.366,25.66,39.725,25.66z">
+            </path>
+          </svg>
+        </div>
+        <div class="brand-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 64 64"
+            style="fill: #000000">
+            <radialGradient id="SGc3VMLWrXclrqp9cj466a" cx="34.625" cy="244.235" r="23.206"
+              gradientTransform="matrix(1 0 0 -1 0 276.11)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f4e9c3"></stop>
+              <stop offset=".219" stop-color="#f8eecd"></stop>
+              <stop offset=".644" stop-color="#fdf4dc"></stop>
+              <stop offset="1" stop-color="#fff6e1"></stop>
+            </radialGradient>
+            <path fill="url(#undefined)"
+              d="M14.5,26H10c-1.657,0-3,1.343-3,3v5H4v6h9.5c1.381,0,2.5,1.119,2.5,2.5l0,0	c0,1.381-1.119,2.5-2.5,2.5h-0.25c-2.209,0-4,1.791-4,4l0,0c0,2.209,1.791,4,4,4H19c1.105,0,2,0.895,2,2l0,0c0,1.105-0.895,2-2,2	H7.5C5.567,57,4,58.567,4,60.5l0,0C4,62.433,5.567,64,7.5,64h44c1.933,0,3.5-1.567,3.5-3.5l0,0c0-1.933-1.567-3.5-3.5-3.5l0,0	c-1.381,0-2.5-1.119-2.5-2.5l0,0c0-1.381,1.119-2.5,2.5-2.5H56c2.209,0,4-1.791,4-4l0,0c0-2.209-1.791-4-4-4h-2.5	c-1.933,0-3.5-1.567-3.5-3.5v0c0-1.933,1.567-3.5,3.5-3.5H59c2.761,0,5-2.239,5-5l0,0c0-2.761-2.239-5-5-5H43c-1.657,0-3-1.343-3-3	l0,0c0-1.657,1.343-3,3-3h1.5c1.933,0,3.5-1.567,3.5-3.5l0,0c0-1.933-1.567-3.5-3.5-3.5H42c-1.657,0-3-1.343-3-3l0,0	c0-1.657,1.343-3,3-3h2c2.209,0,4-1.791,4-4l0,0c0-2.209-1.791-4-4-4H13c-2.209,0-4,1.791-4,4l0,0c0,2.209,1.791,4,4,4h8	c2.209,0,4,1.791,4,4l0,0c0,2.209-1.791,4-4,4H10.5C9.119,16,8,17.119,8,18.5v0c0,1.381,1.119,2.5,2.5,2.5h4	c1.381,0,2.5,1.119,2.5,2.5v0C17,24.881,15.881,26,14.5,26z">
+            </path>
+            <linearGradient id="SGc3VMLWrXclrqp9cj466b_x1UWRXNij8QS_gr1" x1=".365" x2="64" y1="32.5" y2="32.5"
+              gradientUnits="userSpaceOnUse">
+              <stop offset=".053" stop-color="#5d6b79"></stop>
+              <stop offset="1" stop-color="#515c69"></stop>
+            </linearGradient>
+            <path fill="url(#SGc3VMLWrXclrqp9cj466b_x1UWRXNij8QS_gr1)"
+              d="M6.156,29.243l-5.723,9.919c-0.192,0.333,0.048,0.75,0.433,0.75H3.63	c0.356,0,0.686-0.19,0.865-0.498l5.629-9.701L6.156,29.243z M6.299,29.005c0,0,0.815-1.486,1.625-2.92	c0.354-0.628,1.019-1.014,1.74-1.014c1.408,0.001,3.757,0.003,5.086,0.004c0.552,0,0.995,0.448,0.995,1.001v2.61	c0,0,0.323-1.386,0.891-2.043c0.534-0.619,1.246-1.478,2.872-1.592h10.963c0.552,0,1,0.448,1,1v1.955c0,0.552-0.448,1-1,1	L6.299,29.005z M64,28.008V26.05c0-0.552-0.448-1-1-1H51.2c-1.622,0.114-2.337,0.972-2.872,1.592	c-0.569,0.657-0.89,2.043-0.89,2.043v0.318L63,29.008C63.552,29.008,64,28.56,64,28.008z M33.095,25.07h1.578c0.552,0,1,0.448,1,1	v2.935h-3.578V26.07C32.095,25.518,32.543,25.07,33.095,25.07z M44.839,25.07h1.574c0.552,0,1,0.448,1,1v2.935h-3.574V26.07	C43.839,25.518,44.286,25.07,44.839,25.07z M47.413,30.425l-3.514-0.233v4.566c0,0-0.01,1.314-1.158,1.314c-1.138,0-6.039,0-6.039,0	s-1.023-0.093-1.023-1.303c0-1.207,0-5.196,0-5.196l-3.549-0.285v7.001c0.574,3.359,3.311,3.617,3.311,3.617	s0.278,0.022,0.324,0.026h8.156c0,0,3.491-0.311,3.491-4.023C47.413,32.196,47.413,30.425,47.413,30.425z M13.111,39.914h15.73	c2.914-0.647,3.218-3.577,3.218-3.577c0.136-0.871,0.057-1.574,0.057-1.574c-0.088-0.588-1.094-3.178-3.281-3.405	c-1.304-0.134-12.91-1.155-12.91-1.155c0.225,1.288,0.748,1.938,1.094,2.311c0.805,0.857,2.087,1.099,2.087,1.099	c0.309,0.033,8.945,0.824,8.945,0.824c0.274,0.017,0.797,0.093,0.79,0.849c0,0.091-0.075,0.757-0.738,0.757H16.089	c-0.276,0-0.5-0.224-0.5-0.5v-5.373l-3.478-0.281v9.027C12.111,39.466,12.559,39.914,13.111,39.914z M47.444,37.017	c0.001-0.552,0.448-0.998,1-0.998h11.429c0.286,0,0.595-0.187,0.595-0.187c0.13-0.129,0.235-0.364,0.235-0.591	c0-0.753-0.561-0.786-0.843-0.803c0,0-8.732-0.808-9.036-0.834c0,0-1.211-0.207-2.017-1.068c-0.351-0.369-0.815-0.771-1.161-2.099	c0,0,11.671,0.763,12.968,0.897c2.189,0.232,3.215,2.632,3.308,3.43c0,0,0.093,0.722-0.02,1.607c0,0-0.454,3.374-3.664,3.579H48.441	c-0.553,0-1.001-0.449-1-1.002L47.444,37.017z">
+            </path>
+            <radialGradient id="SGc3VMLWrXclrqp9cj466c" cx="34.625" cy="244.235" r="23.206"
+              gradientTransform="matrix(1 0 0 -1 0 276.11)" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#f4e9c3"></stop>
+              <stop offset=".219" stop-color="#f8eecd"></stop>
+              <stop offset=".644" stop-color="#fdf4dc"></stop>
+              <stop offset="1" stop-color="#fff6e1"></stop>
+            </radialGradient>
+            <path fill="url(#undefined)"
+              d="M54,8L54,8c-2.209,0-4-1.791-4-4l0,0c0-2.209,1.791-4,4-4l0,0c2.209,0,4,1.791,4,4l0,0	C58,6.209,56.209,8,54,8z">
+            </path>
+          </svg>
+        </div>
+        <div class="brand-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48"
+            style="fill: #000000">
+            <path fill="#0288d1"
+              d="M24,4C12.956,4,4,12.956,4,24s8.956,20,20,20s20-8.956,20-20S35.044,4,24,4z M24,41c-9.391,0-17-7.609-17-17S14.609,7,24,7s17,7.609,17,17S33.391,41,24,41z">
+            </path>
+            <path fill="#0288d1"
+              d="M35.641,25.563l2.84,0.004l-0.004,2.395l-5.691-0.012l0.012-8.172l2.855,0.004L35.641,25.563z M26.34,25.102l-4.699,3.684l-4.285-3.379c-0.621,1.484-2.109,2.52-3.836,2.516l-3.664-0.004l0.008-8.172l3.668,0.004c1.926,0.004,3.309,1.223,3.828,2.531l4.297-3.367l1.586,1.25l-3.934,3.086l0.754,0.594l3.934-3.086l1.59,1.254l-3.934,3.082l0.75,0.594l3.941-3.082l0.004-2.836l2.852,0.004l-0.008,5.781l2.84,0.004l-0.004,2.391l-5.691-0.008L26.34,25.102z M15.012,23.84c0-1.113-0.73-1.742-1.77-1.742h-0.637l-0.004,3.477h0.621C14.184,25.574,15.012,25.051,15.012,23.84">
+            </path>
+          </svg>
+        </div>
+        <div class="brand-logo">
+          <svg stroke="currentColor" fill="currentColor" stroke-width="0" role="img" viewBox="0 0 24 24" height="100"
+            width="100" xmlns="http://www.w3.org/2000/svg">
+            <title></title>
+            <path
+              d="M20.254 11.421a.81.81 0 00-.815.866.839.839 0 00.827.867.816.816 0 00.815-.867A.838.838 0 0020.254 11.421zM13.744 11.421a.81.81 0 00-.815.866.839.839 0 00.827.867.816.816 0 00.815-.867A.838.838 0 0013.744 11.421zM6.733 11.369a.786.786 0 00-.651.307.987.987 0 00-.171.736L7.388 11.8A.709.709 0 006.733 11.369z M0,8v8H24V8Zm5.006,5.827H2.227v-4h.857v3.224H5.006Zm1.817-.621a1.289,1.289,0,0,0,.884-.326l.534.411a2.025,2.025,0,0,1-1.431.588A1.594,1.594,0,1,1,6.717,10.7a1.543,1.543,0,0,1,1.216.5,1.671,1.671,0,0,1,.37.86l-2.162.9A.937.937,0,0,0,6.823,13.206Zm4.883.621h-.845V12.075a.679.679,0,0,0-.712-.651.66.66,0,0,0-.7.651v1.752H8.606V10.748h.846v.441h0a1.278,1.278,0,0,1,1-.493,1.185,1.185,0,0,1,1.25,1.222Zm1.984.052a1.593,1.593,0,1,1,1.66-1.592A1.6,1.6,0,0,1,13.69,13.879Zm2.8-.053-1.267-3.078h.966l.764,2.1.764-2.1h.966l-1.267,3.078Zm3.711.053a1.593,1.593,0,1,1,1.66-1.592A1.6,1.6,0,0,1,20.2,13.879Zm2-.418H22.06v.366h-.085v-.366h-.137v-.077H22.2Zm.541.366h-.082v-.315l-.137.213H22.51l-.136-.213v.315h-.082v-.443h.09l.134.21.134-.21h.088Z">
+            </path>
+          </svg>
+        </div>
+        <div class="brand-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48"
+            style="fill: #000000">
+            <path fill="#ff7043" d="M6 6H42V42H6z"></path>
+            <path fill="#fafafa" d="M34 15H38V33H34zM18 22H22V33H18z"></path>
+            <path fill="#fafafa" d="M30,21v12h-4V22c0-1.66-1.34-3-3-3h-9v14h-4V15h14C27.31,15,30,17.69,30,21z"></path>
+          </svg>
+        </div>
+        <div class="brand-logo">
+          <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48"
+            style="fill: #000000">
+            <path fill="#fff" d="M24 4A20 20 0 1 0 24 44A20 20 0 1 0 24 4Z"></path>
+            <path fill="#1976d2"
+              d="M24,43.997c-0.199,0-0.652,0.006-0.85,0l4-10.999h5.625c0.987,0,2.071-0.759,2.409-1.686l4.748-12.687c0.725-1.995-0.417-3.626-2.539-3.626h-7.804l-6.518,18.257h-0.002l-3.712,10.198C10.55,41.361,4,33.445,4,23.999c0-9.174,6.178-16.905,14.6-19.261l-3.83,10.526h-0.001L8.15,32.998h4.239l5.576-14.999h3.185l-5.576,14.999l3.919,0.001l5.438-14.374c0.726-1.995-0.416-3.626-2.536-3.626H19.15l3.951-10.978C23.399,4.008,23.699,4,24,4c11.046,0,20,8.953,20,19.999S35.046,43.997,24,43.997z M36.15,17.999h-3.185l-4.509,11.999h3.185L36.15,17.999z">
+            </path>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- -------footer------ -->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download our app</h3>
+          <p>Top Products with good support</p>
+          <div class="app-logo">
+            <span>
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 48 48"
+                style="fill: #000000">
+                <linearGradient id="jFdG-76_seIEvf-hbjSsaa_rZwnRdJyYqRi_gr1" x1="1688.489" x2="1685.469" y1="-883.003"
+                  y2="-881.443" gradientTransform="matrix(11.64 0 0 22.55 -19615.32 19904.924)"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#047ed6"></stop>
+                  <stop offset="1" stop-color="#50e6ff"></stop>
+                </linearGradient>
+                <path fill="url(#jFdG-76_seIEvf-hbjSsaa_rZwnRdJyYqRi_gr1)" fill-rule="evenodd"
+                  d="M7.809,4.608c-0.45,0.483-0.708,1.227-0.708,2.194	v34.384c0,0.967,0.258,1.711,0.725,2.177l0.122,0.103L27.214,24.2v-0.433L7.931,4.505L7.809,4.608z"
+                  clip-rule="evenodd"></path>
+                <linearGradient id="jFdG-76_seIEvf-hbjSsab_rZwnRdJyYqRi_gr2" x1="1645.286" x2="1642.929" y1="-897.055"
+                  y2="-897.055" gradientTransform="matrix(9.145 0 0 7.7 -15001.938 6931.316)"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#ffda1c"></stop>
+                  <stop offset="1" stop-color="#feb705"></stop>
+                </linearGradient>
+                <path fill="url(#jFdG-76_seIEvf-hbjSsab_rZwnRdJyYqRi_gr2)" fill-rule="evenodd"
+                  d="M33.623,30.647l-6.426-6.428v-0.45l6.428-6.428	l0.139,0.086l7.603,4.321c2.177,1.227,2.177,3.249,0,4.493l-7.603,4.321C33.762,30.561,33.623,30.647,33.623,30.647z"
+                  clip-rule="evenodd"></path>
+                <linearGradient id="jFdG-76_seIEvf-hbjSsac_rZwnRdJyYqRi_gr3" x1="1722.978" x2="1720.622" y1="-889.412"
+                  y2="-886.355" gradientTransform="matrix(15.02 0 0 11.5775 -25848.943 10324.73)"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#d9414f"></stop>
+                  <stop offset="1" stop-color="#8c193f"></stop>
+                </linearGradient>
+                <path fill="url(#jFdG-76_seIEvf-hbjSsac_rZwnRdJyYqRi_gr3)" fill-rule="evenodd"
+                  d="M33.762,30.561l-6.565-6.567L7.809,43.382	c0.708,0.761,1.9,0.847,3.232,0.103L33.762,30.561"
+                  clip-rule="evenodd"></path>
+                <linearGradient id="jFdG-76_seIEvf-hbjSsad_rZwnRdJyYqRi_gr4" x1="1721.163" x2="1722.215" y1="-891.39"
+                  y2="-890.024" gradientTransform="matrix(15.02 0 0 11.5715 -25848.943 10307.886)"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#33c481"></stop>
+                  <stop offset="1" stop-color="#61e3a7"></stop>
+                </linearGradient>
+                <path fill="url(#jFdG-76_seIEvf-hbjSsad_rZwnRdJyYqRi_gr4)" fill-rule="evenodd"
+                  d="M33.762,17.429L11.041,4.522	c-1.33-0.761-2.524-0.658-3.232,0.103l19.386,19.369L33.762,17.429z"
+                  clip-rule="evenodd"></path>
+              </svg></span>
+            <span><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="70" height="70" viewBox="0 0 48 48"
+                style="fill: #000000">
+                <linearGradient id="OpwYZ9nhL01h2sErtedzua_4PbFeZOKAc61_gr1" x1="24" x2="24" y1="4.617" y2="40.096"
+                  gradientUnits="userSpaceOnUse">
+                  <stop offset="0" stop-color="#33bef0"></stop>
+                  <stop offset="1" stop-color="#0a85d9"></stop>
+                </linearGradient>
+                <path fill="url(#OpwYZ9nhL01h2sErtedzua_4PbFeZOKAc61_gr1)"
+                  d="M33.9,6H14.1C9.626,6,6,9.626,6,14.1v19.8c0,4.473,3.626,8.1,8.1,8.1h19.8	c4.474,0,8.1-3.627,8.1-8.1V14.1C42,9.626,38.374,6,33.9,6z">
+                </path>
+                <path
+                  d="M12.3,30.977c-1.378,0-2.5-1.114-2.5-2.484c0-1.37,1.122-2.484,2.5-2.484h3.798l4.869-8.309	l-1.423-2.429c-0.338-0.578-0.431-1.251-0.262-1.897c0.169-0.646,0.58-1.188,1.156-1.524c0.384-0.224,0.82-0.342,1.262-0.342	c0.885,0,1.712,0.474,2.158,1.237l0.007,0.012l0.006-0.011c0.445-0.763,1.272-1.237,2.158-1.237c0.443,0,0.879,0.119,1.263,0.343	c1.19,0.698,1.59,2.233,0.892,3.422l-6.291,10.736h3.328l0.293,0.295c0.222,0.223,0.425,0.476,0.623,0.774l0.197,0.33	c0.489,0.911,0.598,1.918,0.319,2.854l-0.211,0.714H12.3z"
+                  opacity=".05"></path>
+                <path
+                  d="M12.3,30.477c-1.103,0-2-0.89-2-1.984c0-1.094,0.897-1.984,2-1.984h4.084l5.162-8.809l-1.572-2.682	c-0.27-0.461-0.345-1-0.209-1.518c0.135-0.517,0.463-0.95,0.924-1.219c0.307-0.179,0.656-0.274,1.01-0.274	c0.708,0,1.37,0.379,1.727,0.989l0.438,0.749l0.438-0.748c0.356-0.61,1.018-0.989,1.726-0.989c0.354,0,0.703,0.095,1.01,0.274	c0.952,0.559,1.271,1.787,0.713,2.738L21.02,26.509h3.992l0.146,0.147c0.198,0.199,0.381,0.427,0.56,0.698l0.185,0.31	c0.418,0.781,0.511,1.646,0.27,2.456l-0.106,0.357H12.3z"
+                  opacity=".07"></path>
+                <path fill="#fff"
+                  d="M25.302,27.63c-0.148-0.224-0.312-0.434-0.498-0.621h-4.656l7.173-12.242	c0.419-0.715,0.179-1.634-0.535-2.053c-0.716-0.419-1.635-0.179-2.052,0.536l-0.87,1.484l-0.87-1.485	c-0.418-0.715-1.337-0.954-2.052-0.536c-0.715,0.418-0.955,1.337-0.536,2.052l1.72,2.935l-5.455,9.309H12.3	c-0.829,0-1.5,0.665-1.5,1.484c0,0.819,0.671,1.484,1.5,1.484h13.394c0.194-0.653,0.141-1.382-0.221-2.058L25.302,27.63z">
+                </path>
+                <path
+                  d="M14.5,36.179c-0.443,0-0.879-0.119-1.263-0.344c-0.576-0.338-0.986-0.88-1.155-1.526	c-0.168-0.646-0.075-1.32,0.263-1.896l0.713-1.218l0.44-0.088C13.859,31.036,14.196,31,14.528,31l0.118,0.001	c1.081,0.032,2.06,0.494,2.766,1.3l0.476,0.542l-1.229,2.1C16.211,35.706,15.385,36.179,14.5,36.179z"
+                  opacity=".05"></path>
+                <path
+                  d="M14.5,35.679c-0.354,0-0.704-0.095-1.01-0.275c-0.46-0.27-0.789-0.704-0.924-1.221	s-0.061-1.056,0.21-1.517l0.6-1.024l0.22-0.044c0.329-0.066,0.634-0.098,0.932-0.098l0.112,0.001	c0.933,0.028,1.783,0.429,2.396,1.129l0.238,0.271l-1.047,1.789C15.87,35.3,15.208,35.679,14.5,35.679z"
+                  opacity=".07"></path>
+                <path fill="#fff"
+                  d="M14.626,32.002c-0.317-0.009-0.628,0.026-0.932,0.087l-0.487,0.831	c-0.419,0.715-0.179,1.634,0.536,2.053c0.238,0.14,0.5,0.206,0.757,0.206c0.515,0,1.017-0.266,1.295-0.741l0.865-1.477	c-0.487-0.556-1.19-0.934-2.03-0.959H14.626z">
+                </path>
+                <path
+                  d="M33.229,36.179c-0.885,0-1.712-0.474-2.158-1.236l-6.027-10.285l-0.017-0.052	c-0.417-1.289-0.335-2.618,0.214-3.793l1.669-2.858l4.72,8.055h4.07c1.378,0,2.5,1.114,2.5,2.484c0,1.37-1.122,2.484-2.5,2.484	h-1.159l0.842,1.437c0.338,0.576,0.431,1.249,0.263,1.896s-0.579,1.188-1.155,1.526C34.109,36.06,33.673,36.179,33.229,36.179z"
+                  opacity=".05"></path>
+                <path
+                  d="M33.229,35.679c-0.708,0-1.37-0.378-1.727-0.988l-6-10.238l-0.017-0.052	c-0.361-1.118-0.288-2.317,0.208-3.376l1.216-2.081l4.433,7.565H35.7c1.103,0,2,0.89,2,1.984c0,1.094-0.897,1.984-2,1.984h-2.031	l1.283,2.19c0.271,0.461,0.345,1,0.21,1.517s-0.463,0.951-0.924,1.221C33.933,35.584,33.584,35.679,33.229,35.679z"
+                  opacity=".07"></path>
+                <path fill="#fff"
+                  d="M35.7,27.009h-4.643l-4.147-7.076l-0.763,1.303c-0.444,0.95-0.504,2.024-0.185,3.011l5.972,10.191	c0.279,0.476,0.78,0.741,1.295,0.741c0.257,0,0.519-0.066,0.757-0.206c0.715-0.419,0.954-1.338,0.535-2.053l-1.725-2.943H35.7	c0.829,0,1.5-0.665,1.5-1.484C37.2,27.674,36.529,27.009,35.7,27.009z">
+                </path>
+              </svg></span>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <h3>Subscribe</h3>
+          <p>Stay up to date with product updates</p>
+          <form>
+            <input class="newsletter_email_signup" type="email" name="email_signup" required="required"
+              placeholder="Your email" />
+            <button class="newsletter_signup_btn"><span>Sign up</span>
+          </form>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Coupons</a></li>
+            <li><a href="#">Blog Post</a></li>
+            <li><a href="#">Join Affiliate</a></li>
+            <li><a href="#">Return Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul class="social-media">
+            <li class="facebook">
+              <a href="#"><img src="https://img.icons8.com/fluency/48/000000/facebook-new.png" /></a>
+            </li>
+            <li class="instagram">
+              <a href="#"><img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" /></a>
+            </li>
+            <li class="twitter">
+              <a href="#"><img src="https://img.icons8.com/fluency/48/000000/twitter.png" /></a>
+            </li>
+            <li class="youtube">
+              <a href="#"><img src="https://img.icons8.com/fluency/48/000000/youtube-play.png" /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="copyright">
+        Copyright © 2022 Made with 💖 by Kamran.
+      </p>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("a").on("click", function (event) {
+        if (this.hash !== "") {
+          event.preventDefault();
+          var hash = this.hash;
+          $("html, body").animate(
+            {
+              scrollTop: $(hash).offset().top,
+            },
+            1200,
+            function () {
+              window.location.hash = hash;
+            }
+          );
+        }
+      });
+    });
+  </script>
+  <script>
+    function updatetxt() {
+      var text = "Product successfully added to your shopping cart";
+      alert(text);
+    }
+  </script>
+  <script>
+    var MenuItems = document.getElementById("menu-items");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      } else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+</body>
+
+</html>
